@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+
+
+<audio src="mars.mp3"  autoplay loop></audio>
+
+    <style>
+        .heads{
+        
+            border-color: whitesmoke;
+            border-style: dotted;
+            border-width: 5px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding: 5px;
+            padding-left: 5px;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-image: url("https://images.all-free-download.com/images/graphicthumb/abstract_smooth_wave_background_vector_grapihic_art_569579.jpg");
+            background-size: cover; 
+            border-color: rgb(255, 0, 149);
+            border-style: ridge;
+            border-radius: 50px;
+            border-width: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        canvas{
+            box-shadow: black 20px 10px 50px;
+        }
+
+
+    
+        
+    </style>    
+</head>
+
+<body>
+
+    <div class="heads">
+
+   <marquee behavior="alternate" direction="right">
+
+       <p>This snake game is developed by Haniya Fahim</p>
+
+    </marquee>
+
+   <marquee behavior="alternate" direction="left"> <h1> Sssssssnake  Game</h1></marquee>  
+
+</div>
+
+   <button onClick="window.location.reload();">Try Again</button>
+   <script>
+       let onClick="window.location.reload();"
+       if(onClick){
+           prompt(" SURE YOU WANT TO START OR RESTART?",'Press OK or CANCEL to choose your answer')
+       }
+   </script>
+
+    <canvas id="game" width="400" height="400">
+       
+    <script src="snake.js"></script>
+</body>
+</html>

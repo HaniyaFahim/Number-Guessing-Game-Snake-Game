@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+<div class ="card card_div">
+
+   <div class="card-body">
+
+<h1>Number Guessing game </h1>
+
+<p>Try and guess a random number between 1 and 50</p>
+
+<p>You have 10 attempt to guess the right number</p>
+
+   </br>
+
+<div id="wrapper">
+
+<form class="form">
+
+<label for ="guessField" id="guess">Guess a number</label>
+
+<input type="text" id="guessField" class="guessField">
+
+<input type="submit" id="subt" value="My guess" class="guessSubmit">
+
+<input type="submit" id="restart" value="Restart Game" class="restartSubmit">
+
+</form>
+
+<div class="resultParas">
+
+   <marquee behavior="alternative" direction="left"><p class="last_p">Previous Tries: <span   class="guesses" ></span></p>
+
+      <p class="last_p">Remaining Guesses: <span   class="lastResult" >10</span></p>
+      </marquee>
+      
+<p class="lowOrHi"></p>
+    
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="level3.js"></script>
+
+</body>
+
+</html>
